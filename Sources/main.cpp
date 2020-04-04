@@ -9,7 +9,7 @@ void game(); // Função que joga um jogo
 
 int main(){
     system("color 05");
-    int chose{2};
+    int chose{2}, tamanho{0};
     bool wh{true};
     std :: string msg;
     double pita[2];
@@ -27,7 +27,12 @@ int main(){
                 std :: cout << "Informe a frase para contar quantos caracteres\n";
                 std :: cin.ignore();
                 std :: getline(std :: cin, msg);
-                std :: cout << "Quantidade de caracteres: " << msg.size() << "\n";
+                for(int i{0}; i <= msg.size(); i++){
+                    if(msg[i] != ' ' && msg[i] != '\0'){
+                        tamanho++;
+                    }
+                }
+                std :: cout << "Quantidade de caracteres: " << tamanho << "\n";
                 break;
             case 2:
                 std :: cout << "Valor de B: ";
