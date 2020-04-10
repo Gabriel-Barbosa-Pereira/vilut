@@ -1,8 +1,6 @@
 # Vilut
 
-***
-
-Software básico criado para treinar linguagem C++
+ Software básico criado para treinar linguagem C++
 
 Criado por um *estudante* de programação.  
 
